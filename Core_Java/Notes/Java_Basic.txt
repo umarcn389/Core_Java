@@ -1,0 +1,5 @@
+1. Java code first gets compiled and Generates a Byte Code which is understandable by JVM(Java Virtual Machine).
+2. Java is a Platform independent Language but JVM is OS Dependent.
+3. To Run any libraries in our code we need a runtime which is JRE(Java RunTime Environment).
+4. Java code first passes through jdk then jre and then JVM. as JVM is built on OS.
+5. java Code order-: jdk->JRE->JVM

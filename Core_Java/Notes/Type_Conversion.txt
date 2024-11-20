@@ -1,0 +1,24 @@
+Two Possible ways-:
+i. Implicit type Conversion
+ii. Explicit type Conversion
+
+1.When we try to assign a shorter sized data type to a larger one it is possible but vice versa is not true.
+example-:
+a byte type variable can be assigned to int type.
+as byte range from -128 to 127
+int range is -2^31 to 2^31.
+
+
+2. We can explicitly assign an int type to a byte but we might loose data.
+if the int vale is greater than 256 then for conversion compiler would take % with 256
+example-:
+int a=257
+byte b=(byte) a;
+sout(b)//1-: 257%256
+
+3. Type Promotions-:
+	when we are performing operations and value just go beyond byte size then java automatically assigns higher type.
+	example-:
+	byte a=10;
+	byte b=30;
+	int c=a*b//300

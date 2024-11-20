@@ -1,0 +1,40 @@
+1. In java String is class which is used to Store array of characters;
+2. String z=new String("dfhfdjkgh"); we can create Strings using this way also but When we write this String s="umar", it also
+acts in the same way.
+3. Since String is a class its memory will be allocated in heap and a reference would be stored in stack.
+
+example-:
+public class StringTest {
+    public static void main(String[] args) {
+        String a="Umar";
+        String b="Umar";
+        String c="umar";
+        System.out.println("The adrdess of a is "+a.hashCode());
+        System.out.println("The address of b is "+b.hashCode());
+        System.out.println("The address of c is "+c.hashCode());
+
+        //String z=new String("dfhfdjkgh");//since String is a class
+    }
+}
+
+In the above example Only 2 Objects are being created one for a and one for c.
+In java there is a area in heap called String constant pool in which all the String data is stored. and the String data 
+cannot be changed as it is a constant pool.
+Whenever we try to create a string java will first search that whether exactly the same String already exists in the pool , if it exists 
+it will just assign the same address to the new variable and it will not create a new object.
+
+When we try to modify an existing String data it will create a new Object with modified String data in the pool and Assign the
+address to the variable. now the older String data will be available for Garbage Collection.
+
+Normally the Strings made by the String Class are Immutable.
+Mutable Strings can be created using String Buffered Reader class and String Builder class.
+
+There are two types of Strings-:
+1. Mutable Strings.
+2. Immutable Strings.
+
+
+String Buffer-:
+It is similar to cpp vectors as it can changes its capacity according to the data.
+its initial capacity is 16.
+Difference b/w String Buffer and Builder is buffer is Thread safe and builder is not.

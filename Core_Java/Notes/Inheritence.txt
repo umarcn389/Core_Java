@@ -1,0 +1,45 @@
+Inheritence-: When a class extends the properties of another class this process is called inheritence.
+When a class extends B it does not necessarily needs B.java , B.class will also work.
+Types of inheritence-:
+1. Single Level inheritence
+2. Multilevel Inheritence.
+3.Multiple Inheritence-: it is not directly available in Java, achieved using interfaces.
+
+This & Super-:
+Example-:
+class As{
+    public As(){
+	super();
+        System.out.println("Default Constructor of A");
+    }
+    public As(int n){
+	super();
+        System.out.println("Parameterized Constructor of A "+ n);
+    }
+}
+class Bs extends As{
+    public Bs(){
+	super();
+        System.out.println("Default Constructor of B");
+    }
+    public Bs(int n){
+		super();
+        System.out.println("Parameterized Constructor of B "+ n);
+    }
+}
+public class SuperTest {
+    public static void main(String[] args) {
+//        Bs b=new Bs();// Both Default
+        Bs b1=new Bs(5);
+
+    }
+}
+
+In java By Default every Constructor has a method super() which is placed at the start of the constructor.
+
+this()-: will execute the constructor of the same class.
+
+In java every class extends Object class.
+
+Method Overriding-:
+This techinque is used to make use of same method which is present in the parent class and give some different definition to it.

@@ -1,0 +1,29 @@
+Normally a variable declared inside a class is an Instance Variable for which value will be different for each object.
+But what if we want that a variable whose value will be same across all the objects of that class. 
+static variables are variables which is common to every object of that class.
+these varibles are called using their class name not the object as it is a class property not object.
+
+There is a different area in jvm where all the static variables are stored.	
+
+Static methods works same as static variables except for that only static variables can be used inside static methods.
+if we pass object reference in Static method then we can use variables.
+if a non static variables are used they must be initialized.
+
+
+Static Block-: is a block for which code iside it is called only once and even before constructor.
+logic-:
+Whenever we create an object there are two things that happen, one is the class loads in the class loader in jvm and 
+another is the objects are instantiated.
+Now class loading happens only once so staic block is called only once no matter how many objects are created.
+
+But class loader only loads a class if an object is created for it.
+
+what if we want to load the class without creating object for it.
+Class.forName("className");
+
+static block is used to initialize the static variables.
+
+
+Anonymous Object-:
+Objects which are just created to call the function or constructor.
+It can not be reused again.

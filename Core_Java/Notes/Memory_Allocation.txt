@@ -1,0 +1,25 @@
+How Memory is allocated in java?
+consider a example-:
+class A{
+
+	int a;
+	public int abc(int b){
+	sout(b);
+	return b;
+	}
+	};
+
+public class FileName{
+	psvm(String args[]){
+		int c=10;
+		A obj=new A();
+		int g=obj.abc(c);
+	}
+}
+
+
+1. In java a stack is created for each methods.
+2. If a method is declared inside a class in java it will consume the stack memory but it will declared in heap where that
+class is defined.
+3. The class is defined and instantioned in heap memory and its address is stored in stack where the object is created.
+
